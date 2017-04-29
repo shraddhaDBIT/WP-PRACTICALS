@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head lang="en-US">
+<title>DISPLAY PAGE</title>
+<link rel="icon" href="DBIT_logo.png" type="image/png">
+
+<meta charset="UTF-8">
+<meta name="description" content="CSI">
+<meta name="keywords" content="don bosco,dbit">
+<meta name="author" content="SHRADDHA">
+<meta http-equiv="refresh" content="60"> <!--Refresh document every 60 seconds:-->
+
+
+<style>
+
+h3 {
+   color: #6b1845;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+
+ul#m01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #da325a;
+}
+
+li#m01 {
+    float: left;
+}
+
+li#m01 a {
+    display: block ;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li#m01 a:hover {
+    background-color: #1da38b;
+}
+
+.form-submit-button:hover {
+
+background: #016ABC;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+}
+
+.button {
+    background-color:#da325a; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+border: 1px solid #eee;
+    display: inline-block;
+border-radius: 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+#example1 {
+ 
+background:linear-gradient(to right,#196987,#31e2e8,#0da3f0,#31e2e8,#0d68f0);
+}
+
+.button {
+    background-color:#da325a; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+border: 1px solid #eee;
+    display: inline-block;
+border-radius: 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+</head>
+<div id="example1">
+
+ <table style ="background-color:rgb(154,227,255)"; align="center" width=100%>
+<tr>
+<td>
+<img src="dbitlogo.png"  alt="DBIT"  style= "width: 230px ; height : 170px; "></td>
+
+<td><font size="6"> <center> <b><h3>Don Bosco Institute of Technology</h3></b></center> </font>
+
+
+
+<center> 
+<font size="6"> <b><h3>Computer Society of India</h3></b> </FONT>
+</center> 
+</td>
+
+<td>
+ <img src="csilogo.png"  alt="CSI"  style= "width: 200px ; height : 150px ;align="right">
+</td>
+</tr>
+</table>
+
+
+
+<body>
+
+
+<center><hr>
+<ul id="m01">
+  <li id="m01"><a href="basic.html#home">&emsp;&emsp;&emsp;&emsp;<b>Home</b> &emsp;&emsp;&emsp;&emsp;</a></li>
+  <li id="m01"><a href="basic.html#news">&emsp;&emsp;&emsp;&emsp;<b>Purposes</b>&emsp;&emsp;&emsp;&emsp;</a></li>
+  <li id="m01"><a href="basic.html#contact">&emsp;&emsp;&emsp;&emsp;<b>Contact</b>&emsp;&emsp;&emsp;&emsp;</a></li>
+  <li id="m01"><a href="basic.html#about">&emsp;&emsp;&emsp;&emsp;<b>About</b>&emsp;&emsp;&emsp;&emsp;</a></li>
+</ul>
+</center>
+<br><br><br>
+ <fieldset>
+<table  align="center">
+
+<tr>
+    <legend align="center"><h2><b>Regestration for  Wordpress Workshop</b></h2> </legend> 
+
+<form action="action_page.php" method="post" on input="x.value=parseInt(a.value)+parseInt(b.value)">
+
+ <center><h2>Details to be filled by the students:</h2></center>
+
+<tr>
+<center> <b><td> Date</td>
+   
+<td>:</td> </b>
+  <td>  <input type="date" ></td>
+</center>
+</tr>
+
+
+<tr>
+<center>
+
+
+ <b> <td>Time</td> 
+<td>: </td> </b> 
+  <td>From 
+ <input type="time" name="123"></td></center>
+
+
+<td>To </td>
+ <td> <input type="time" name="usr_time"></td>
+</tr>
+</center>
+
+
+
+<tr>
+<center>
+  <b><td> Venue</td>
+<td>: </td></b> 
+  <td><input type="text" name="place" placeholder="PLACE" ></td>
+</center>
+
+</tr>
+
+<tr>
+
+<center>
+  <td>Speaker</td>
+<td> :</td>
+<td><input type="text" name="Date" placeholder="NAME" ></td>
+
+
+</center>
+ </tr>
+</table>
+<br>
+</fieldset>
+
+<fieldset>
+<legend align="center">
+<h2>Description Of Workshop</h2> </legend>
+
+<form action="action_page.php" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+
+<br>
+<table align="center">
+<tr>
+
+<td> Name</td>
+<td>:</td>
+<td>  <input type="text" name="name" id="firstname"  placeholder="Name" autocomplete></td>
+</tr>
+
+<tr>
+
+ <td> Department</td> 
+<td>:</td>
+
+<td>
+  <select name="dept">
+
+  <option value="it" >Information Technology</option>
+ 
+ <option value="comp">Computer Engineering</option>
+  
+<option value="extc">Electronic and Telecommunication</option>
+  
+<option value="mech">Mechanical Engineering</option>
+</select>
+</td>
+</tr>
+
+<tr>
+  
+ <td> Class </td> 
+ <td> : </td> 
+  <td>
+<select name="Class">
+
+ <option value="fe" >FE </option>
+ 
+ <option value="se" selected>SE</option>
+  
+ <option value="te">TE</option>
+  
+<option value="be">BE</option>
+ </select>
+</td>
+</tr>
+
+
+<tr>
+<center> 
+<td>  Email-Id </td>  
+<td> : </td> 
+   <td> <input type="email" name="usrname"  placeholder="Email-Id"> </td> 
+ </center>
+ </tr>
+
+
+
+ <tr> <center>
+ <td> Contact Number </td> 
+ <td> : </td> 
+  
+ <td>  <input type="num" name="usrnum"  placeholder="10-digitnumber"> </td> 
+ </center> </tr> 
+<br>
+<br>
+
+<tr>
+<center>
+<td>CSI  member </td>
+<td>:</td>
+  <td><input type="radio" name="member" value="Y" checked> YES
+    <input type="radio" name="member" value="N" > NO
+  </td></center>
+</tr>
+
+<tr>
+
+<td> Fees </td>  
+<td> : </td> 
+<td> <input type="fees" name="number"  placeholder="Fees"> </td> 
+
+</tr>
+
+
+
+
+<tr><center> 
+<td> CSI Member ID </td>  
+<td> : </td> 
+   <td> <input type="fees" name="number"  placeholder="user ID"> </td> 
+ </center> </tr>
+
+
+
+
+<tr>
+<center> 
+<td>  Email-Id </td>  
+<td> : </td> 
+   <td> <input type="email" name="usrname"  placeholder="email-Id"> </td> 
+ </center> </tr>
+</table>
+<br>
+
+
+<center><p><a href="csidbit@gmail.com"> csidbit@gmail.com</a></p>
+</center>
+
+</fieldset>
+<center> <br>
+
+<center><button class="button" style="vertical-align:middle"><span>SUBMIT</span></button>
+
+<button class="button">RESET</button>
+
+</center>
+<br>
+<br>
+
+</div>
+</body>
+</html>
+

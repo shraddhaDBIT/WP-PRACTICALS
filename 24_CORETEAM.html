@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en-US">
+
+<title>CORE TEAM</title>
+
+<link rel="icon" href="computer.jpg" type="image/png">
+
+
+
+<meta charset="UTF-8">
+<meta name="description" content="DBIT-CSI">
+
+
+<meta name="keywords" content="HTML, CSS, XML, JavaScript">
+
+<meta name="author" content="SHRADDHA">
+
+<meta http-equiv="refresh" content="15"> <!--Refresh document every 15 seconds:-->
+
+
+
+
+
+<style>
+h3 {
+   color: brown;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+
+.form-submit-button {
+
+background: #B9DFFF;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+}
+
+.form-submit-button:hover {
+
+background: #016ABC;
+
+color: #fff;
+
+border: 1px solid #eee;
+
+border-radius: 20px;
+
+box-shadow: 5px 5px 5px #eee;
+
+}
+
+.button {
+    background-color:#da325a; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+border: 1px solid #eee;
+    display: inline-block;
+border-radius: 20px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#example1 {
+ background:linear-gradient(to right,#e6ecff,#ccd9ff,#b3c6ff);
+}
+
+</style>
+
+
+
+
+
+</head>
+
+
+
+<div id="example1">
+<table style ="background-color:rgb(154,227,255)";text-align:center; width=100% >
+<tr>
+<td>
+<img src="dbitlogo.png"  alt="Don Bosco Institute Of Technology"  style= "width: 250px ; height : 250 px; "></td>
+
+<td><center><font size="6"> <b><h3>Don Bosco Institute of Technology </b></h3></font>
+
+
+
+
+
+
+<font size="6">  <b><h3>Computer Society of India </b></h3> </FONT>
+</center> 
+</td>
+
+<td>
+ <img src="csilogo.png"  alt="CSI LOGO"  style= "width: 170px ; height : 150px ; align="right">
+</td>
+</tr>
+</table>
+<body>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+ <fieldset>
+ 
+   
+<tr>
+
+<legend align="center">
+<h2>Core Team</h2></legend>
+
+
+</tr>
+<br><br>
+<table align="center">
+<tr>
+
+
+
+
+
+<td>Workshop Name</td>
+<td>:</td>
+<td>  <input type="text" name="Workshop Name" id="firstname" ></td>
+
+</tr>
+
+<tr>
+<center>
+
+
+ <td> Date</td>  <td>:</td>   <td>  <input type="date" ></td>
+
+
+</center>
+</td>
+</tr>
+
+<tr>
+
+<center> 
+<td>Time</td>
+<td>:</td>
+
+<td>From
+<input type="time" name="123"></td>
+
+<td> To </td>  <td><input type="time" name="usr_time"></td>
+
+</center>
+</tr>
+
+<tr>
+
+ <center>
+<td>CSI fees</td>
+<td>:</td>
+ <td> <input type="text" name="Date"  ></td>
+</center>
+</td>
+</tr>
+
+
+
+<tr>
+
+ <center>
+<td>Non CSI</td>
+<td>:</td>
+  <td><input type="text" name="Date"  ></td>
+</tr>
+</center>
+
+
+<tr>
+
+<center>
+
+<td>Venue</td>
+<td>:</td>
+ <td> <input type="text"  placeholder="venue" ></td>
+</center>
+</tr>
+
+</table>
+</fieldset>
+
+
+<fieldset>
+
+<tr>
+<td>
+
+ <td><legend align="center"><h2>Speaker Details</h2></legend></td>
+<br><br>
+<table  align="center">
+
+<tr>
+<td>Speaker Name</td>
+<td>:</td>
+
+
+<td>
+ <select name="speaker">
+ 
+ <option value="revathy">Revathy</option>
+
+  <option value="janhavi">Janhavi</option>
+ 
+ <option value="aruna">Aruna </option>
+
+  <option value="other"> Other</option></select>
+ 
+</td>
+
+
+</tr>
+ 
+<tr>
+
+ <td> Department</td> 
+<td>:</td>
+<td>
+  <select name="dept">
+<option value="no" checked >--SELECT  DEPARTMENT--</option>
+  <option value="it" >Information Technology</option>
+ 
+ <option value="comp">Computer Engineering</option>
+  
+<option value="extc">Electronic and Telecommunication</option>
+  
+<option value="mech">Mechanical Engineering</option>
+</select>
+</td>
+
+</tr>
+
+<tr> 
+ <td> Class </td> 
+ <td> : </td> 
+  <td>
+<select name="Class">
+   <option value="fe" >FE </option>
+ <option value="se" selected>SE</option>
+ <option value="te">TE</option>
+  <option value="be">BE</option>
+ </select>
+</td>
+</tr>
+
+ 
+ <tr> 
+ <td> Contact Number </td> 
+ <td> : </td> 
+  
+ <td>  <input type="num" name="num"  placeholder="10-digitnumber" onkeyup="limit(this,10);" onkeydown="limit(this)"> </td> 
+
+</tr> 
+ <tr> 
+ <td>  Email-Id </td>  
+<td> : </td> 
+   <td> <input type="email" name="em"  placeholder="email-Id"> </td> 
+
+</tr>
+
+</table>
+</fieldset>
+<br>
+<fieldset>
+<table align="center">
+
+<h2><center>Benefits Of Attending The Workshop</center></h2>
+ <br>
+<tr>
+<td><center> <textarea name="message" rows="10" cols="60">
+
+</textarea>
+</center></td>
+</tr>
+</table>
+</fieldset>
+
+
+<br>
+
+<fieldset>
+<center>
+<legend align="center"><h2>Who Can Attend The Workshop</h2></legend> <br>
+
+<textarea name="message" rows="10" cols="30">
+
+
+</textarea></center>
+<br>
+
+<center>
+
+<table align="center">
+<tr>
+  <td>Department</td>
+<td>:</td>
+<td>
+  <select name="dept">
+  <option value="no" checked >--SELECT  DEPARTMENT--</option>
+<option value="it" >Information Technology</option>
+ 
+ <option value="comp">Computer Engineering</option>
+ 
+ <option value="extc">Electronic and Telecommunication</option>
+
+  <option value="mech">Mechanical Engineering</option>
+</select>
+</td>
+</tr>
+
+
+<tr>
+
+<td>Class</td> <td>:</td>
+<td> 
+<select name="Class">
+
+ 
+ <option value="fe" >FE </option>
+  <option value="se" selected>SE</option>
+  
+  <option value="te">TE</option>
+  
+<option value="be">BE</option>
+
+</select>
+ </td>
+</tr>
+
+ 
+
+<tr>
+ <td>
+Relevent To Subject </td> 
+<td>: </td>
+<td>
+  <select name="subject">
+
+  <option value="WP" >WebProgramming </option>
+  <option value="SE" selected>Computer Networks</option>
+  <option value="COA">Computer architecture</option>
+  <option value="DSA">Data Structures</option>
+
+</select>
+</td>
+</tr>
+</table>
+</fieldset>
+<br>
+<br>
+<br>
+
+<center><button class="button" style="vertical-align:middle"><span>SUBMIT</span></button>
+
+<button class="button">RESET</button>
+
+
+</center>
+
+</div>
+
+</form>
+
+<script>
+
+
+
+function validateForm() 
+ {
+    var x = document.forms["myForm"]["Workshop Name"];
+    if (x.value== "") 
+    {
+        alert("Name must be filled out");
+        return false;
+    }
+    
+	if (! allLetter(x)) 
+	    {
+	
+		 alert("Workshop Name should be all characters!!");        
+		 return false;
+	       }
+	       
+	       
+            var y = document.forms["myForm"]["num"];
+
+                if (y.value == "")
+                 {
+                alert("Contact No. should not be blank !!");
+		           return false;
+
+                     } 
+		if (! allnumeric(y))
+		
+		 {
+		 alert('Please input numeric characters only in your contact number');
+      return false;                                                         
+	                        }
+
+  
+
+	    
+var z = document.forms["myForm"]["em"];
+
+  if (z.value == "")
+  
+   {
+                alert("Email should not be blank !!");
+		            
+		return false;
+            }
+
+	if (! ValidateEmail(z))
+               {
+		 alert("Please input valid Email ID!!!");
+      return false;
+	}
+var t = document.forms["myForm"]["dept"];
+
+
+	
+	if (!deptselect(t))
+              {
+		 alert('Please select your department !!!');
+                                  return false;
+	}
+	       
+}
+
+
+            function allLetter(inputtxt)
+                {
+                var letters = /^[A-Za-z]+$/;
+                
+              if(inputtxt.value.match(letters))
+                   {
+              	     return true;
+                   }
+                 else
+                   {
+              	     return false;
+                   }
+                } 
+ function allnumeric(inputtxt)
+               {
+                  var numbers = /^[0-9]+$/;
+                  if(inputtxt.value.match(numbers))
+                  {
+                    return true;
+                  }
+                  else
+                  {
+                    return false;
+                  }
+               }	
+                
+            function limit(element,limit)
+              {
+                var max_chars = limit;
+
+                  if(element.value.length > max_chars)
+
+                {
+                    element.value = element.value.substr(0, max_chars);
+                  }
+              }
+ 
+			function ValidateEmail(inputText)
+			 {
+				var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if(inputText.value.match(mailformat))
+					{
+					
+					return true;
+					}
+				else
+					{
+					return false;
+				
+ 
+			                                   }
+     			}
+
+	function deptselect(dept)
+				{
+					
+					if(dept.value =="no")
+					{
+						 alert('no');
+						return false;
+					}
+					else
+					{
+						 
+						return true;
+					}
+                                                                 }
+	
+</script>
+
+</body>
+</html>
